@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>SIMPLE<span>GROCERY</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 id="cart">Shopping Cart</h2>
+    <form action="#" method="post" id="shippingForm" name="form_ship">
+        <table id="tableform">
+            <tr>
+                <th>S.No</th>
+                <th>Items</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Cold drinks</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Milk</td>
+                <td>15 bags</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>eggs</td>
+                <td id="item1">24</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Strawberry Yogurt</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Bagels</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Potatoes</td>
+                <td>5 lbs</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>cookies</td>
+                <td>6 packets</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>fruits</td>
+                <td>5 lbs</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>chicken</td>
+                <td>5 lbs</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>steak</td>
+                <td>2 lbs</td>
+            </tr>
+        </table>
+        <h2>Please tell me how much do you have and I will help you to Shop.</h2>
+        <p><label for="colddrink">Cold Drink:</label>
+            <input type="number" id="colddrink" name="colddrink" /><span id="coldErr">error message here</span>
+        </p>
+
+        <p><label for="egg">Egg:</label>
+            <input type="number" id="egg" name="egg" /><span id="eggErr">error message here</span>
+        </p>
+        <p><label for="milk">Milk:</label>
+            <input type="number" id="milk" name="milk" /><span id="milkErr">error message here</span>
+        </p>
+        <p><label for="yogurt">Strawberry Yogurt:</label>
+            <input type="number" id="yogurt" name="yogurt" /><span id="yogurtErr">error message here</span>
+        </p>
+        <p><label for="bagels">Bagels:</label>
+            <input type="number" id="bagels" name="bagels" /><span id="bagelErr">error message here</span>
+        </p>
+        <p><label for="potatoes">Potatoes:</label>
+            <input type="number" id="potatoes" name="potatoes" /><span id="potatoErr">error message here</span>
+        </p>
+        <p><label for="cookies">Cookies:</label>
+            <input type="number" id="cookies" name="cookies" /><span id="cookieErr">error message here</span>
+        </p>
+        <p><label for="fruits">Fruits:</label>
+            <input type="number" id="fruits" name="fruits" /><span id="fruitErr">error message here</span>
+        </p>
+        <p><label for="chicken">Chicken:</label>
+            <input type="number" id="chicken" name="chicken" /><span id="chickenErr">error message here</span>
+        </p>
+        <p><label for="steak">Steak:</label>
+            <input type="number" id="steak" name="steak" /><span id="steakErr">error message here</span>
+        </p>
+        <p>
+            <input id="button" type="submit" value="Go Shop" name="submit" />
+        </p>
+    </form>
+    <!-- <div id="thanks_msg">
+        <h2 id="msg">Thank you <span id="thanksCustomer"></span> for your purchase!</h2>
+        
+    </div> -->
+    <table id="thanks_msg">
+        <h2 id="mylist">Shopping List</h2>
+        <tr>
+            <th>S.No</th>
+            <th>Items</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Cold Drink</td>
+            <td id="colddrinkmsg">24</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Milk</td>
+            <td id="milkmsg">16 bags</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>eggs</td>
+            <td id="eggmsg">24</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Strawberry Yogurt</td>
+            <td id="yogurtmsg">24</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Bagels</td>
+            <td id="bagelmsg">24</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Potatoes</td>
+            <td id="potatomsg">5 lbs</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>cookies</td>
+            <td id="cookiemsg">6 packets</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>fruits</td>
+            <td id="fruitmsg" >5 lbs</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>chicken</td>
+            <td id="chickenmsg" >5 lbs</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>steak</td>
+            <td id="steakmsg">2 lbs</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

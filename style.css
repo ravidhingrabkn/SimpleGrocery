@@ -1,0 +1,82 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    /* background-image: url(https://491011.fs1.hubspotusercontent-na1.net/hub/491011/hubfs/Grocery-and-supermarkets-header.jpg?width=3840&height=1762&name=Grocery-and-supermarkets-header.jpg); */
+    /* background-color: red; */
+    /* border: 2px solid red; */
+}
+html { 
+    background: url(https://491011.fs1.hubspotusercontent-na1.net/hub/491011/hubfs/Grocery-and-supermarkets-header.jpg?width=3840&height=1762&name=Grocery-and-supermarkets-header.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #282828;
+}
+h1{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    color: yellow;
+    font-family: 'ubuntu';
+}
+
+ul{
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+a{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'ubuntu';
+    font-size: 1.2vw;
+}
+a:hover{
+    color: #f0c330;
+    transition: 0.5s;
+
+}
+img{
+    width: 100%;
+    margin-top: -16px;
+}
+
+
+
+
+
+
+
+
+#thanks_msg{display: none;}
+#mylist,#eggErr, #milkErr, #coldErr,#yogurtErr,#bagelErr,#potatoErr,#cookieErr,#fruitErr,#chickenErr,#steakErr{
+    display: none;
+}
+#tableform, th, td {
+    border:1px solid yellow;
+    text-align: center;
+    /* color: white; */
+  }
+  td{
+    width: 100px;
+    font-weight: bold;
+}
+#button{
+    margin: 10px;
+    border-radius: 5px;
+}
+p{
+    margin: 5px;
+}
